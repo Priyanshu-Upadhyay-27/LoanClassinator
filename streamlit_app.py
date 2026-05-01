@@ -11,7 +11,6 @@ import sys
 sys.modules['__main__'].invert_column = custom_functions.invert_column
 
 import streamlit as st
-
 # Page configuration
 st.set_page_config(
     page_title="LoanInsight AI",
