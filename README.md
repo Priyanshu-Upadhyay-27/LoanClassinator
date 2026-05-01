@@ -79,12 +79,6 @@ loanclassinator/
 └── streamlit_app.py
 ```
 
-## 🗺️ Summer Roadmap & Future Improvements
-This project is actively evolving. Upcoming architectural upgrades include:
-* **Advanced OOP Architecture:** Refactoring the monolithic ML pipelines and utility functions into robust Object-Oriented programming patterns to ensure production-grade scalability.
-* **Autonomous Agent Layer:** Upgrading the current context-aware LLM assistant into a fully autonomous Agentic framework (e.g., using ReAct) where the LLM can independently route queries and invoke analytical tools.
-* **SQL Integration:** Implementing a robust relational database backend to handle user sessions, log prediction metrics, and manage state.
-
 ---
 
 ## 🛡️ Creator & Copyright Identity
