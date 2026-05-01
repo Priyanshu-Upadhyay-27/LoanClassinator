@@ -1,9 +1,3 @@
-## 🗺️ Summer Roadmap & Future Improvements
-This project is actively evolving. Upcoming architectural upgrades include:
-* **Advanced OOP Architecture:** Refactoring the monolithic ML pipelines and utility functions into robust Object-Oriented patterns to ensure production-grade scalability.
-* **Autonomous Agent Layer:** Upgrading the current context-aware LLM assistant into a fully autonomous Agentic framework (e.g., using ReAct) where the LLM can decide which analytical tools to invoke independently.
-* **SQL Integration:** Implementing a relational database backend to handle user sessions, log prediction metrics, and manage state, mirroring the infrastructure of productHere is the complete, production-ready `README.md` file for LoanClassinator. You can copy and paste this directly into your repository.
-```markdown
 # 🏦 LoanClassinator
 
 ![Python](https://img.shields.io/badge/Python-3.9+-0d1117?style=for-the-badge&logo=python&logoColor=00e5ff)
@@ -11,54 +5,59 @@ This project is actively evolving. Upcoming architectural upgrades include:
 ![XGBoost](https://img.shields.io/badge/XGBoost-0d1117?style=for-the-badge&logo=xgboost&logoColor=b900ff)
 ![Machine Learning](https://img.shields.io/badge/Machine_Learning-0d1117?style=for-the-badge&logo=scikit-learn&logoColor=00e5ff)
 
-> An intelligent, ML-powered loan classification system that leverages 2.2 million Lending Club records to predict default risk and provides Context-Aware AI explanations for financial decisions.
+> An intelligent, ML-powered loan classification system that leverages 2.2 million Lending Club records to predict default risk and provides Context-Aware Agentic AI explanations for financial decisions.
 
 ## 📋 Overview
-LoanClassinator moves beyond binary "Approved/Denied" machine learning models. By combining a robust XGBoost predictive pipeline with K-Means customer segmentation, the system accurately assesses risk. More importantly, it integrates SHAP (SHapley Additive exPlanations) with an LLM-powered advisory layer to provide users with transparent, natural-language explanations of their specific financial standing and actionable paths to approval.
+LoanClassinator moves beyond traditional binary "Approved/Denied" machine learning models. By combining a robust XGBoost predictive pipeline with K-Means customer segmentation, the system accurately assesses risk. More importantly, it integrates SHAP (SHapley Additive exPlanations) with an LLM-powered Agentic advisory layer to provide users with transparent, natural-language explanations of their specific financial standing and actionable paths to approval.
 
 ## 🏗️ Architecture Flow
-1. **Frontend (Streamlit):** Users interact with a dark-themed, cinematic UI to input financial data or explore clustering dashboards.
+1. **Frontend (Streamlit):** Users interact with a dark-themed, premium cinematic UI to input financial data or explore clustering dashboards.
 2. **Preprocessing Layer:** Raw data is validated and transformed to match the training environment.
 3. **ML Engine:** 
    - **XGBoost:** Calculates the probability of loan default.
    - **K-Means:** Groups the applicant into a specific financial cluster.
 4. **Explainability (SHAP):** Extracts the top contributing features (positive and negative) for the specific prediction.
-5. **AI Advisory Layer:** An LLM consumes the SHAP values, risk scores, and cluster statistics to generate personalized financial advice and alternative loan suggestions.
+5. **AI Advisory Layer:** A contextual LLM agent consumes the SHAP values, risk scores, and cluster statistics to dynamically generate personalized financial advice and alternative loan suggestions.
 
 ## ✨ Key Features
 * **High-Fidelity Predictions:** Trained on a massive 2.2M record dataset for robust default probability calculation.
 * **Customer Segmentation:** Interactive dashboards visualizing where an applicant stands compared to broader financial clusters.
-* **AI Financial Advisor:** Context-aware chat interfaces that answer specific questions about the user's loan decision.
+* **AI Financial Advisor:** Context-aware chat interfaces utilizing Large Language Models to answer specific questions about the user's loan decision.
 * **Dynamic Alternatives:** Automated calculation of alternative loan terms if an applicant is initially denied.
 
 ## 🛠️ Tech Stack
 * **Frontend:** Streamlit
-* **Machine Learning:** XGBoost, Scikit-Learn
+* **Machine Learning:** XGBoost, Scikit-Learn, K-Means
 * **Explainability:** SHAP
-* **AI Integration:** LLM API / Python Wrappers
+* **AI Integration:** LLM API / Python Wrappers (Agentic AI Workflow)
 * **Data Manipulation:** Pandas, NumPy
 
 ## 🚀 Installation & Local Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/priyanshu-upadhyay-27/loanclassinator.git
+   git clone [https://github.com/priyanshu-upadhyay-27/loanclassinator.git](https://github.com/priyanshu-upadhyay-27/loanclassinator.git)
    cd loanclassinator
-Create and activate a virtual environment:
+   ```
 
-Bash
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-Install dependencies:
+2. **Create and activate a virtual environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
 
-Bash
-pip install -r requirements.txt
-Launch the application:
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Bash
-streamlit run streamlit_app.py
-📁 Project Structure
-Plaintext
+4. **Launch the application:**
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+## 📁 Project Structure
+```text
 loanclassinator/
 ├── models/
 │   ├── loan_xgb_model_pipeline.pkl
@@ -78,14 +77,31 @@ loanclassinator/
 ├── custom_functions.py
 ├── resave_pickles.py
 └── streamlit_app.py
-🗺️ Summer Roadmap & Future Improvements
+```
+
+## 🗺️ Summer Roadmap & Future Improvements
 This project is actively evolving. Upcoming architectural upgrades include:
+* **Advanced OOP Architecture:** Refactoring the monolithic ML pipelines and utility functions into robust Object-Oriented programming patterns to ensure production-grade scalability.
+* **Autonomous Agent Layer:** Upgrading the current context-aware LLM assistant into a fully autonomous Agentic framework (e.g., using ReAct) where the LLM can independently route queries and invoke analytical tools.
+* **SQL Integration:** Implementing a robust relational database backend to handle user sessions, log prediction metrics, and manage state.
 
-Advanced OOP Architecture: Refactoring the monolithic ML pipelines and utility functions into robust Object-Oriented patterns to ensure production-grade scalability.
+---
 
-Autonomous Agent Layer: Upgrading the current context-aware LLM assistant into a fully autonomous Agentic framework (e.g., using ReAct) where the LLM can decide which analytical tools to invoke independently.
+## 🛡️ Creator & Copyright Identity
 
-SQL Integration: Implementing a relational database backend to handle user sessions, log prediction metrics, and manage state, mirroring the infrastructure of product-based tech startups.
+**Created and Maintained by Priyanshu Upadhyay**
 
-👤 Author
-Priyanshu Upadhyay
+This project is the original intellectual property of Priyanshu Upadhyay. It was independently architected and developed as a comprehensive showcase of end-to-end machine learning deployment and Agentic AI integration.
+
+**About the Developer:**
+* **Education:** 3rd-Year Computer Science and Engineering Undergraduate at KIET Group of Institutions, Ghaziabad.
+* **Specialization:** Artificial Intelligence research, Retrieval-Augmented Generation (RAG), Large Language Model (LLM) integration, and scalable system architecture.
+* **Achievements:** Finalist (Top 1%) in the Clash of Codes Hackathon; Organizer of the Innotech 2025 technical festival.
+
+**Connect & Verification:**
+* **GitHub:** [priyanshu-upadhyay-27](https://github.com/priyanshu-upadhyay-27)
+
+*© 2026 Priyanshu Upadhyay. All rights reserved. Unauthorized claiming, copying, or redistribution of this specific architecture and codebase without explicit attribution is prohibited.*
+
+---
+**License:** MIT License
