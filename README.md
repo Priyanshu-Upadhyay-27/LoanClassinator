@@ -90,7 +90,6 @@ This project is the original intellectual property of Priyanshu Upadhyay. It was
 **About the Developer:**
 * **Education:** 3rd-Year Computer Science and Engineering Undergraduate at KIET Group of Institutions, Ghaziabad.
 * **Specialization:** Artificial Intelligence research, Retrieval-Augmented Generation (RAG), Large Language Model (LLM) integration, and scalable system architecture.
-* **Achievements:** Finalist (Top 1%) in the Clash of Codes Hackathon; Organizer of the Innotech 2025 technical festival.
 
 **Connect & Verification:**
 * **GitHub:** [priyanshu-upadhyay-27](https://github.com/priyanshu-upadhyay-27)
